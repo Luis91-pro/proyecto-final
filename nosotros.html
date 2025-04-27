@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Colombianas | Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Conoce la historia detrás de Artesanías Colombianas. Trabajamos con artesanos del Sur del Cesar para preservar técnicas ancestrales.">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Encabezado común -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-sin-fondo.png" alt="Artesanías Colombianas"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        <!-- Hero Section -->
+        <section class="hero-nosotros text-center mb-5 p-5 bg-light rounded-3">
+            <h1 class="display-4">Nuestra Historia</h1>
+            <p class="lead">Tejiendo tradición desde el corazón del Sur del Cesar</p>
+        </section>
+
+        <!-- Sección Nuestra Misión -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="img/artesanos-trabajando.jpg" alt="Artesanos trabajando" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Misión</h2>
+                <p>En Artesanías Colombianas preservamos las técnicas ancestrales de tejido, apoyando a comunidades artesanales del Sur del Cesar. Cada pieza cuenta una historia y lleva el sello único de manos colombianas.</p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success me-2"></i> Materiales 100% naturales</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Comercio justo con artesanos</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Producción sostenible</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección Valores -->
+        <section class="valores text-center py-5 bg-light mb-5">
+            <h2 class="mb-5">Nuestros Valores</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="valor-icono mb-3">
+                        <i class="fas fa-hands-helping fa-3x text-primary"></i>
+                    </div>
+                    <h3>Trabajo Justo</h3>
+                    <p>Pagamos precios equitativos a nuestros artesanos, promoviendo su desarrollo económico.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="valor-icono mb-3">
+                        <i class="fas fa-leaf fa-3x text-success"></i>
+                    </div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Usamos materiales biodegradables y procesos respetuosos con el medio ambiente.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="valor-icono mb-3">
+                        <i class="fas fa-award fa-3x text-warning"></i>
+                    </div>
+                    <h3>Calidad</h3>
+                    <p>Cada pieza pasa por un riguroso control antes de llegar a tus manos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo/Artesanos -->
+        <section class="mb-5">
+            <h2 class="text-center mb-5">Conoce a Nuestros Artesanos</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/artesano-1.jpg" class="card-img-top" alt="María Gómez, tejedora">
+                        <div class="card-body">
+                            <h5 class="card-title">María Gómez</h5>
+                            <p class="card-text">Tejedora de hamacas con 40 años de experiencia. Su técnica de nudos es única en la región.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/artesano-2.jpg" class="card-img-top" alt="Carlos Mendez, cestería">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Méndez</h5>
+                            <p class="card-text">Especialista en cestería con bejucos naturales. Premio Nacional de Artesanía 2018.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/artesano-3.jpg" class="card-img-top" alt="Familia Rodríguez">
+                        <div class="card-body">
+                            <h5 class="card-title">Familia Rodríguez</h5>
+                            <p class="card-text">Tres generaciones dedicadas al tejido de sombreros vueltiaos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer común -->
+    <footer class="site-footer mt-auto">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONÓCENOS</h3>
+                <ul>
+                    <li><a href="nosotros.html">HISTORIA</a></li>
+                    <li><a href="nosotros.html#valores">CALIDAD</a></li>
+                    <li><a href="nosotros.html#valores">LÍNEA ÉTICA</a></li>
+                    <li>SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CONTÁCTENOS</h3>
+                <ul>
+                    <li><a href="contacto.html">TRABAJA CON NOSOTROS</a></li>
+                    <li><a href="contacto.html">¿TIENES UN LOCAL?</a></li>
+                    <li><a href="contacto.html">PROVEEDORES</a></li>
+                    <li><a href="contacto.html">ATENCIÓN AL CLIENTE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Artesanías Colombianas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Al final del body -->
+    <script src="js/app.js" type="module"></script>
+<script src="js/carrito.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/script.js"></script> <!-- Si lo necesitas -->
+</body>
+</html>

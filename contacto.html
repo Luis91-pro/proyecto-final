@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Colombianas | Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Contáctanos para pedidos especiales, colaboraciones o preguntas. Estamos en el Sur del Cesar, Colombia.">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Encabezado común -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-sin-fondo.png" alt="Artesanías Colombianas"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        <!-- Hero Section -->
+        <section class="hero-contacto text-center mb-5 p-5 bg-light rounded-3">
+            <h1 class="display-4">Contáctanos</h1>
+            <p class="lead">¿Preguntas, pedidos especiales o colaboraciones? Escríbenos.</p>
+        </section>
+
+        <div class="row">
+            <!-- Formulario de Contacto -->
+            <div class="col-lg-7 mb-5">
+                <h2 class="mb-4">Envía un mensaje</h2>
+                <form id="form-contacto" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo *</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico *</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Ingresa un email válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto *</label>
+                        <select class="form-select" id="asunto" required>
+                            <option value="" selected disabled>Selecciona...</option>
+                            <option value="pedido">Pedido especial</option>
+                            <option value="pago">Consulta sobre pago</option>
+                            <option value="envio">Información de envío</option>
+                            <option value="colaboracion">Colaboración con artesanos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje *</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Información de contacto</h2>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Ubicación</h5>
+                                <p>Calle 10 #5-20, Centro<br>Sur del Cesar, Colombia</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Teléfonos</h5>
+                                <p>+57 123 456 7890<br>Lunes a Viernes: 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Correo electrónico</h5>
+                                <p>info@artesaniascolombianas.com<br>ventas@artesaniascolombianas.com</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h5 class="mb-3">Síguenos</h5>
+                        <div class="social-icons">
+                            <a href="#" class="text-decoration-none me-3">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none me-3">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none me-3">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d-73.25372868457144!3d8.24194638113203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5c3a66f6239b39%3A0x4b6b1f5a3a0d1a1a!2sSur%20del%20Cesar%2C%20Colombia!5e0!3m2!1ses!2ses!4v1620000000000!5m2!1ses!2ses" 
+                                    width="100%" 
+                                    height="200" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer común -->
+    <footer class="site-footer mt-auto">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONÓCENOS</h3>
+                <ul>
+                    <li><a href="nosotros.html">HISTORIA</a></li>
+                    <li><a href="nosotros.html#valores">CALIDAD</a></li>
+                    <li><a href="nosotros.html#valores">LÍNEA ÉTICA</a></li>
+                    <li>SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CONTÁCTENOS</h3>
+                <ul>
+                    <li><a href="contacto.html">TRABAJA CON NOSOTROS</a></li>
+                    <li><a href="contacto.html">¿TIENES UN LOCAL?</a></li>
+                    <li><a href="contacto.html">PROVEEDORES</a></li>
+                    <li><a href="contacto.html">ATENCIÓN AL CLIENTE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Artesanías Colombianas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Validación de formulario
+        (function() {
+            'use strict';
+            var form = document.getElementById('form-contacto');
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
+</body>
+</html>
